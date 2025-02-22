@@ -51,7 +51,7 @@ An extensive dataset of size **10,000,000** was used to simulate and analyze Hig
 
 ## Code Walkthrough
 
-- The total execution time of the project is approximately **1 minute**, but this may vary depending on system specifications.
+- **The total execution time of the project is approximately 1 minute**, but this may vary depending on system specifications.
 - The execution time of each search algorithm was recorded and analyzed.
 - The search index for each algorithm was printed.
 - A **graphical analysis** of the time complexity for searching a random target was generated.
