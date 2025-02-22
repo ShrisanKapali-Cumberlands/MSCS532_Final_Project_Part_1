@@ -1,43 +1,84 @@
-# MSCS 532 Alorithms and Data Structure
+# MSCS 532: Algorithms and Data Structures
 
 ## Shrisan Kapali
 
-## Student Id : 005032249
+**Student ID:** 005032249
 
-### Final Project - Optimization in High-Performance Computing
+### Final Project Part 1 - Optimization in High-Performance Computing
 
-To run the program, on the terminal run the following command
+### Installation and Execution
 
-Installing Dependencies
+To run the program, execute the following commands in the terminal:
 
-```
+#### Installing Dependencies
+
+```sh
 py -m pip install sortedcontainers
 py -m pip install matplotlib
 ```
 
-```
+#### Running the Program
+
+```sh
 py MSCS_532_Final_Project.py
 ```
 
-## Final report
+---
 
-An extensive data set of size 10000000 was taken to compute or simulate the HPC data set.
-Different search techniques such as linear search O(n), binary search O(logn), hash table search O(1), B-Tree search O(logn), and quicksort O(nlogn) were taken to compute the search time complexity.
+## Final Report
 
-Python module bisect was used for binary search trees, as in B-tree, where the data is inserted in sorted order.
+An extensive dataset of size **10,000,000** was used to simulate and analyze High-Performance Computing (HPC) optimization techniques. Several search algorithms were implemented to evaluate their time complexity:
 
-An LRU cache was implemented to achieve higher performance.
+- **Linear Search**: O(n)
+- **Binary Search**: O(log n)
+- **Hash Table Search**: O(1)
+- **B-Tree Search**: O(log n)
+- **Quicksort**: O(n log n)
 
-Threading was also implemented to compute the search using parallelization to understand performance efficiency.
+#### Key Implementations:
 
-## Code Walkthough
+- The **Python `bisect` module** was used for binary search operations similar to B-Trees, where data is inserted in sorted order.
+- An **LRU Cache** was implemented to enhance performance efficiency.
+- **Threading** was introduced to parallelize search operations and assess performance improvements.
+- **Stress testing** was conducted with varying dataset sizes to evaluate search performance for:
+  - **Minimum and maximum values**
+  - **Random values**
+  - **Non-existent values**
 
-Different search algorithms were implemented and the execution time for each search method implemented was recorded.
+> **Note:** If a search value does not exist in the dataset, the search function returns `-1` or `False`.
+
+---
+
+## Code Walkthrough
+
+- The total execution time of the project is approximately **1 minute**, but this may vary depending on system specifications.
+- The execution time of each search algorithm was recorded and analyzed.
+- The search index for each algorithm was printed.
+- A **graphical analysis** of the time complexity for searching a random target was generated.
+
+---
 
 ## Test Cases
 
-## Stress testing
+- A **random target value** was selected, and all search algorithms were tested against it.
+- Execution times were recorded and compared.
 
-## Remaining files on GitHub
+## Stress Testing
 
-The final combined pdf document "MSCS_532_Project_Phase_4.pdf" and powerpoint presentation used in the demo "Presentation.pptx" have been uploaded. The screenshot of graphs for each search results have also been uploaded.
+Stress tests were performed using dataset sizes of **100,000**, **300,000**, and **900,000**. The target values included:
+
+- **Maximum value**
+- **Minimum value**
+- **Random value**
+- **Non-existent value**
+
+The results were visualized in graphical format.
+
+---
+
+## Project Files on GitHub
+
+- **Final Report**: `MSCS_532_Final_Project_1.pdf`
+- **Graph Screenshots**: Images showcasing search result graphs.
+
+---
